@@ -9,7 +9,11 @@ public class AnimalTest {
         assertEquals(true, newAnimal instanceof Animal);
     }
 
-
+    @Test
+    public void animalGetsName_lion() {
+        Animal newAnimal = setupNewAnimal();
+        assertEquals("lion", newAnimal.getName() );
+    }
 
     public Animal setupNewAnimal(){
         return new Animal("lion");
