@@ -15,6 +15,21 @@ public class AnimalTest {
         assertEquals("lion", newAnimal.getName() );
     }
 
+    @Test
+    public void returnsTrueIfNameIsTrue() {
+        Animal newAnimal = setupNewAnimal();
+        Animal anotherAnimal = setupNewAnimal();
+        assertEquals(newAnimal, anotherAnimal);
+    }
+
+    @Test
+    public void save_insertsObjectsIntoDatabase_Animal() {
+        Animal newAnimal = setupNewAnimal();
+        newAnimal.save();
+        assertTrue(Animal.all().get(0).equals(newAnimal));
+
+    }
+
     public Animal setupNewAnimal(){
         return new Animal("lion");
     }
