@@ -4,8 +4,8 @@ import java.util.List;
 
 
 public class Animal implements DatabaseManagement{
-    private String name;
-    private int id;
+    public String name;
+    public int id;
 
     public Animal(String name) {
         this.name = name;
