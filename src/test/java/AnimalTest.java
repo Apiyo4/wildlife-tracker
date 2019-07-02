@@ -44,6 +44,15 @@ public class AnimalTest {
 
     }
 
+    @Test
+    public void save_assignsIdToObject() {
+        Animal newAnimal = setupNewAnimal();
+        newAnimal.save();
+        Animal savedAnimal = Animal.all().get(0);
+        assertEquals(newAnimal.getId(), savedAnimal.getId());
+
+    }
+
     public Animal setupNewAnimal(){
         return new Animal("lion");
     }

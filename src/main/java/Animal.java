@@ -9,6 +9,7 @@ public class Animal {
 
     public Animal(String name) {
         this.name = name;
+
     }
 
 
@@ -43,4 +44,7 @@ public class Animal {
         }
     }
 
+    public int getId() {
+        return id;
+    }
 }
