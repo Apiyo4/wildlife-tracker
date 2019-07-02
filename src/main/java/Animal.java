@@ -3,7 +3,7 @@ import org.sql2o.*;
 import java.util.List;
 
 
-public class Animal {
+public class Animal implements DatabaseManagement{
     private String name;
     private int id;
 
