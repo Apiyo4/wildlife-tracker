@@ -3,48 +3,71 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class EndangeredAnimalsTest {
-   @Rule
-   public DatabaseRule database = new DatabaseRule();
+public class AnimalTest {
+    @Rule
+    public DatabaseRule database = new DatabaseRule();
+    @Test
+    public void animalInstantiatesCorrectly() {
+        Animal newAnimal = setupNewAnimal();
+        assertEquals(true, newAnimal instanceof Animal);
+    }
 
     @Test
-    public void endangeredAnimalInstantiatesCorrectly() {
-        EndangeredAnimals endangeredAnimal = setupNewEndangeredAnimal();
-        assertTrue(endangeredAnimal instanceof EndangeredAnimals);
+    public void animalGetsName_lion() {
+        Animal newAnimal = setupNewAnimal();
+        assertEquals("lion", newAnimal.getName() );
+    }
+
+    @Test
+    public void returnsTrueIfNameIsTrue() {
+        Animal newAnimal = setupNewAnimal();
+        Animal anotherAnimal = setupNewAnimal();
+        assertEquals(newAnimal, anotherAnimal);
+    }
+
+    @Test
+    public void save_insertsObjectsIntoDatabase_Animal() {
+        Animal newAnimal = setupNewAnimal();
+        newAnimal.save();
+        assertTrue(Animal.all().get(0).equals(newAnimal));
 
     }
 
     @Test
-    public void endangeredAnimalGetHealth_String() {
-        EndangeredAnimals endangeredAnimal = setupNewEndangeredAnimal();
-        assertEquals("ill", endangeredAnimal.getHealth());
+    public void all_returnsAllInstanceOfAnimal_TRUE() {
+        Animal firstAnimal = setupNewAnimal();
+        firstAnimal.save();
+        Animal secondAnimal = new Animal("monkey");
+        secondAnimal.save();
+        assertEquals(true, Animal.all().get(0).equals(firstAnimal));
+        assertEquals(true, Animal.all().get(1).equals(secondAnimal));
+
     }
 
     @Test
-    public void endangeredAnimalGetAge() {
-        EndangeredAnimals endangeredAnimal = setupNewEndangeredAnimal();
-        assertEquals(5, endangeredAnimal.getAge());
+    public void save_assignsIdToObject() {
+        Animal newAnimal = setupNewAnimal();
+        newAnimal.save();
+        Animal savedAnimal = Animal.all().get(0);
+        assertEquals(newAnimal.getId(), savedAnimal.getId());
+
     }
 
+    @Test
+    public void find_returnsAnimalWithSameId_secondAnimal() {
+        Animal firstAnimal = setupNewAnimal();
+        firstAnimal.save();
+        Animal secondAnimal = new Animal("monkey");
+        secondAnimal.save();
+        assertEquals(Animal.find(secondAnimal.getId()), secondAnimal);
+    }
     @Test
     public void endangeredAnimalGetType() {
-        assertEquals("Endangered", EndangeredAnimals.getType());
+        assertEquals("Not endangered", Animal.getType());
+    }
+    public Animal setupNewAnimal(){
+        return new Animal("lion");
     }
 
-    @Test
-    public void returnsTrueIfNameHealthAndAgeAreTrue() {
-        EndangeredAnimals firstEndangeredAnimal = setupNewEndangeredAnimal();
-        EndangeredAnimals secondEndangeredAnimal = setupNewEndangeredAnimal();
-        assertEquals(firstEndangeredAnimal, secondEndangeredAnimal);
-
-    }
-
-    public EndangeredAnimals setupNewEndangeredAnimal(){
-        return new EndangeredAnimals("rhino","ill", 5);
-    }
-
-    public EndangeredAnimals setupNewEndangeredAnimal1(){
-        return new EndangeredAnimals("zebra","okay", 7);
-    }
 
 }

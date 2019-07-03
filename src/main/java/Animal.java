@@ -3,16 +3,10 @@ import org.sql2o.*;
 import java.util.List;
 
 
-public class Animal implements DatabaseManagement{
+public abstract class Animal implements DatabaseManagement{
     public String name;
     public int id;
     public static final String type = "Not endangered";
-
-    public Animal(String name) {
-        this.name = name;
-
-    }
-
 
     @Override
     public boolean equals(Object o) {

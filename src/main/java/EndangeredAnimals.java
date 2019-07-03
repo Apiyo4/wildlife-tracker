@@ -1,4 +1,7 @@
 import java.util.Objects;
+import org.sql2o.*;
+import java.util.List;
+
 
 public class EndangeredAnimals extends Animal{
     private int id;
@@ -9,7 +12,7 @@ public class EndangeredAnimals extends Animal{
 
 
     public EndangeredAnimals(String name, String health, int age) {
-        super(name);
+        this.name= name;
         this.health = health;
         this.age = age;
     }
@@ -29,6 +32,12 @@ public class EndangeredAnimals extends Animal{
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), id, name, health, age);
+    }
+    @Override
+    public void save(){
+        try(Connection con = DB.sql2o.open()){
+            String sql = "INSERT INTO animals (name) "
+        }
     }
 
     public String getHealth() {
