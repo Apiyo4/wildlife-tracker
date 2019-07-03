@@ -1,44 +1,27 @@
+import java.util.List;
 import java.util.Objects;
 import org.sql2o.*;
 
 
 public class EndangeredAnimal extends Animal{
     private int id;
-    private String name;
     private String health;
     private int age;
-    public static final String type = "Endangered";
+    public static final String DATABASE_TYPE = "Endangered";
+    public static final String MAX_HEALTH = "healthy";
+    public static final String MID_HEALTH = "okay";
+    public static final String MIN_HEALTH = "ill";
+    public static final String MAX_AGE = "adult";
+    public static final String MID_AGE = "young";
+    public static final String MIN_AGE = "newborn";
 
 
     public EndangeredAnimal(String name, String health, int age) {
         this.name= name;
         this.health = health;
         this.age = age;
+        type = DATABASE_TYPE;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof EndangeredAnimal)) return false;
-        if (!super.equals(o)) return false;
-        EndangeredAnimal that = (EndangeredAnimal) o;
-        return id == that.id &&
-                age == that.age &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(health, that.health);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), id, name, health, age);
-    }
-    @Override
-    public void save(){
-        try(Connection con = DB.sql2o.open()){
-            String sql = "INSERT INTO animals (name) "
-        }
-    }
-
     public String getHealth() {
         return health;
     }
@@ -47,8 +30,24 @@ public class EndangeredAnimal extends Animal{
         return age;
     }
 
-    public static String getType() {
-        return type;
+
+    public static List<EndangeredAnimal> all(){
+        String sql = "SELECT * FROM animals WHERE type='Endangered';";
+        try(Connection con = DB.sql2o.open()){
+            return con.createQuery(sql).throwOnMappingFailure(false).executeAndFetch(EndangeredAnimal.class);
+        }
     }
+    public static EndangeredAnimal find(int id){
+        try(Connection con = DB.sql2o.open()){
+            String sql = "SELECT * FROM  animals WHERE id = :id";
+            EndangeredAnimal endangeredAnimal = con.createQuery(sql)
+                    .addParameter("id", id)
+                    .throwOnMappingFailure(false)
+                    .executeAndFetchFirst(EndangeredAnimal.class);
+            return endangeredAnimal;
+        }
+    }
+
+
 }
 
