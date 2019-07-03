@@ -103,8 +103,14 @@ public class EndangeredAnimalTest {
         EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "healthy", "adult");
         assertEquals(newEndangeredAnimal.getAge(), EndangeredAnimal.MAX_AGE);
     }
+
+
+
     public EndangeredAnimal setupNewEndangeredAnimal(){
         return new EndangeredAnimal("lion", "ill", "newborn");
+    }
+    public Sighting setupNewSighting(){
+        return new Sighting("ZoneA", "Apiyo", 1);
     }
 
 

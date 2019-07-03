@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import org.sql2o.*;
@@ -45,6 +46,7 @@ public class Sighting {
         return id;
     }
 
+
     public void save(){
         try(Connection con = DB.sql2o.open()){
             String sql = "INSERT INTO sightings (location, ranger, animalId) VALUES (:location, :ranger, :animalId);";
@@ -70,6 +72,23 @@ public class Sighting {
                     .executeAndFetchFirst(Sighting.class);
             return sighting;
         }
+    }
+    public List<Object> getAnimals(){
+        List<Object> allAnimals = new ArrayList<Object>();
+        try(Connection con = DB.sql2o.open()){
+            String sqlEndangeredAnimal = "SELECT * FROM sightings WHERE animalId = :id AND type = 'Endangered'; ";
+            List<EndangeredAnimal> endangeredAnimal = con.createQuery(sqlEndangeredAnimal)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(EndangeredAnimal.class);
+            allAnimals.addAll(endangeredAnimal);
+
+            String sqlNonEndangeredAnimal = "SELECT * FROM sightings WHERE animalId = :id AND type = 'NonEndangered'; ";
+                List<NonEndangeredAnimal> nonEndangeredAnimal = con.createQuery(sqlNonEndangeredAnimal)
+                        .addParameter("id", this.id)
+                        .executeAndFetch(NonEndangeredAnimal.class);
+                allAnimals.addAll(nonEndangeredAnimal);
+        }
+        return allAnimals;
     }
 
 }

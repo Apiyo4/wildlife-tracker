@@ -1,6 +1,8 @@
 import org.junit.Rule;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class SightingTest {
@@ -22,7 +24,6 @@ public class SightingTest {
     @Test
     public void getRanger_returnsRangerName_Apiyo() {
         Sighting newSighting = setupNewSighting();
-        System.out.println(newSighting.getRanger());
         assertEquals("Apiyo", newSighting.getRanger());
     }
 
@@ -42,9 +43,7 @@ public class SightingTest {
     public void save_insertObjectIntoDatabase() {
         Sighting newSighting = setupNewSighting();
         newSighting.save();
-        System.out.println(newSighting);
         Sighting savedSighting = Sighting.all().get(0);
-        System.out.println(savedSighting);
         assertEquals(true, savedSighting.equals(newSighting));
     }
 
@@ -67,10 +66,29 @@ public class SightingTest {
         assertEquals(Sighting.find(secondSighting.getId()), secondSighting);
     }
 
+    @Test
+    public void getAnimal_retrievesAllAnimalsFromDatabase_animalList() {
+        Sighting newSighting = setupNewSighting();
+        newSighting.save();
+        EndangeredAnimal newEndangeredAnimal = setupNewEndangeredAnimal();
+        newEndangeredAnimal.save();
+        NonEndangeredAnimal newNonEndangeredAnimal = setupNewNonEndangeredAnimal();
+        newNonEndangeredAnimal.save();
+        Object[] animals = new Object[] {newEndangeredAnimal, newNonEndangeredAnimal};
+        assert(newSighting.getAnimals().containsAll(Arrays.asList(animals)));
+
+    }
+
     public Sighting setupNewSighting(){
         return new Sighting("ZoneA", "Apiyo", 1);
     }
     public Sighting setupNewSighting1(){
         return new Sighting("ZoneB", "Adongo", 2);
+    }
+    public EndangeredAnimal setupNewEndangeredAnimal(){
+        return new EndangeredAnimal("lion", "ill", "newborn");
+    }
+    public NonEndangeredAnimal setupNewNonEndangeredAnimal(){
+        return new NonEndangeredAnimal("lion");
     }
 }
