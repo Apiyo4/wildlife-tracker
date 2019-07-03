@@ -6,7 +6,7 @@ import org.sql2o.*;
 public class EndangeredAnimal extends Animal{
     private int id;
     private String health;
-    private int age;
+    private String age;
     public static final String DATABASE_TYPE = "Endangered";
     public static final String MAX_HEALTH = "healthy";
     public static final String MID_HEALTH = "okay";
@@ -16,7 +16,7 @@ public class EndangeredAnimal extends Animal{
     public static final String MIN_AGE = "newborn";
 
 
-    public EndangeredAnimal(String name, String health, int age) {
+    public EndangeredAnimal(String name, String health, String age) {
         this.name= name;
         this.health = health;
         this.age = age;
@@ -26,7 +26,7 @@ public class EndangeredAnimal extends Animal{
         return health;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 

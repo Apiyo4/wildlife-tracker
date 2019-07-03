@@ -15,7 +15,7 @@ public class EndangeredAnimalTest {
     @Test
     public void EndangeredAnimalGetsAge_5() {
             EndangeredAnimal newEndangeredAnimal = setupNewEndangeredAnimal();
-            assertEquals(5, newEndangeredAnimal.getAge());
+            assertEquals("newborn", newEndangeredAnimal.getAge());
 
     }
 
@@ -48,7 +48,7 @@ public class EndangeredAnimalTest {
     public void all_returnsAllInstanceOfAnimal_TRUE() {
         EndangeredAnimal firstEndangeredAnimal = setupNewEndangeredAnimal();
         firstEndangeredAnimal.save();
-        EndangeredAnimal secondEndangeredAnimal = new EndangeredAnimal("monkey", "okay", 3);
+        EndangeredAnimal secondEndangeredAnimal = new EndangeredAnimal("monkey", "okay", "adult");
         secondEndangeredAnimal.save();
         assertEquals(true, EndangeredAnimal.all().get(0).equals(firstEndangeredAnimal));
         assertEquals(true, EndangeredAnimal.all().get(1).equals(secondEndangeredAnimal));
@@ -68,28 +68,43 @@ public class EndangeredAnimalTest {
     public void find_returnsAnimalWithSameId_secondAnimal() {
         EndangeredAnimal firstEndangeredAnimal = setupNewEndangeredAnimal();
         firstEndangeredAnimal.save();
-        EndangeredAnimal secondEndangeredAnimal = new EndangeredAnimal("monkey", "okay", 3);
+        EndangeredAnimal secondEndangeredAnimal = new EndangeredAnimal("monkey", "okay", "adult");
         secondEndangeredAnimal.save();
         assertEquals(EndangeredAnimal.find(secondEndangeredAnimal.getId()), secondEndangeredAnimal);
     }
 
     @Test
     public void endangeredAnimal_instantiatesWithMaxHealth() {
-        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "healthy", 8);
+        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "healthy", "young");
         assertEquals(newEndangeredAnimal.getHealth(), EndangeredAnimal.MAX_HEALTH);
     }
     @Test
     public void endangeredAnimal_instantiatesWithMidHealth() {
-        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "okay", 8);
+        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "okay", "young");
         assertEquals(newEndangeredAnimal.getHealth(), EndangeredAnimal.MID_HEALTH);
     }
     @Test
     public void endangeredAnimal_instantiatesWithMinHealth() {
-        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "ill", 8);
+        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "ill", "young");
         assertEquals(newEndangeredAnimal.getHealth(), EndangeredAnimal.MIN_HEALTH);
     }
+    @Test
+    public void endangeredAnimal_instantiatesWithMinAge() {
+        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "ill", "newborn");
+        assertEquals(newEndangeredAnimal.getAge(), EndangeredAnimal.MIN_AGE);
+    }
+    @Test
+    public void endangeredAnimal_instantiatesWithMidAge() {
+        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "okay", "young");
+        assertEquals(newEndangeredAnimal.getAge(), EndangeredAnimal.MID_AGE);
+    }
+    @Test
+    public void endangeredAnimal_instantiatesWithMaxAge() {
+        EndangeredAnimal newEndangeredAnimal = new EndangeredAnimal("monkey", "healthy", "adult");
+        assertEquals(newEndangeredAnimal.getAge(), EndangeredAnimal.MAX_AGE);
+    }
     public EndangeredAnimal setupNewEndangeredAnimal(){
-        return new EndangeredAnimal("lion", "ill", 5);
+        return new EndangeredAnimal("lion", "ill", "newborn");
     }
 
 

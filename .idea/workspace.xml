@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8edff5-50c8-49d8-a0f1-49768cf89cca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NonEndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NonEndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -108,8 +97,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="384">
+              <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3552#3553#0" expanded="true" />
+                <element signature="e#3621#3622#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,22 +121,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="377">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,16 +164,16 @@
         <option value="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" />
         <option value="$PROJECT_DIR$/src/main/java/Endangered_Animals.java" />
         <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/NonEndangeredAnimal.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseManagement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Animal.java" />
         <option value="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Animal.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="684" />
     <option name="width" value="682" />
     <option name="height" value="767" />
@@ -267,13 +258,73 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.NonEndangeredAnimalTest">
+  <component name="RunManager" selected="Gradle.EndangeredAnimalTest">
     <configuration name="EndangeredAnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMaxAge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.endangeredAnimal_instantiatesWithMaxAge&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMidAge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.endangeredAnimal_instantiatesWithMidAge&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMinAge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.endangeredAnimal_instantiatesWithMinAge&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -308,73 +359,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NonEndangeredAnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="NonEndangeredAnimalTest.save_insertsObjectsIntoDatabase_NonEndangeredAnimal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.save_insertsObjectsIntoDatabase_NonEndangeredAnimal&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NonEndangeredAnimalTest" />
-        <item itemvalue="Gradle.NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" />
         <item itemvalue="Gradle.EndangeredAnimalTest" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.endangeredAnimal_instantiatesWithMaxAge" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.endangeredAnimal_instantiatesWithMidAge" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.endangeredAnimal_instantiatesWithMinAge" />
         <item itemvalue="Gradle.EndangeredAnimalTest.save_insertsObjectsIntoDatabase_Animal" />
-        <item itemvalue="Gradle.NonEndangeredAnimalTest.save_insertsObjectsIntoDatabase_NonEndangeredAnimal" />
       </list>
     </recent_temporary>
   </component>
@@ -392,35 +383,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NonEndangeredAnimalTest - 2019.07.03 at 13h 21m 45s.xml">
-      <configuration name="NonEndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest_returnsTrueIfNameIsTrue - 2019.07.03 at 15h 55m 09s.xml">
+      <configuration name="EndangeredAnimalTest.returnsTrueIfNameIsTrue" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest - 2019.07.03 at 14h 22m 58s.xml">
-      <configuration name="NonEndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest_save_insertsObjectsIntoDatabase_Animal - 2019.07.03 at 15h 55m 17s.xml">
+      <configuration name="EndangeredAnimalTest.save_insertsObjectsIntoDatabase_Animal" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest - 2019.07.03 at 14h 24m 00s.xml">
-      <configuration name="NonEndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest - 2019.07.03 at 15h 55m 25s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest_all_returnsAllInstanceOfAnimal_TRUE - 2019.07.03 at 14h 25m 09s.xml">
-      <configuration name="NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest_endangeredAnimal_instantiatesWithMinAge - 2019.07.03 at 16h 02m 24s.xml">
+      <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMinAge" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest_all_returnsAllInstanceOfAnimal_TRUE - 2019.07.03 at 14h 25m 49s.xml">
-      <configuration name="NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest_endangeredAnimal_instantiatesWithMinAge - 2019.07.03 at 16h 02m 46s.xml">
+      <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMinAge" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest_all_returnsAllInstanceOfAnimal_TRUE - 2019.07.03 at 14h 26m 12s.xml">
-      <configuration name="NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest_endangeredAnimal_instantiatesWithMidAge - 2019.07.03 at 16h 03m 21s.xml">
+      <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMidAge" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest_all_returnsAllInstanceOfAnimal_TRUE - 2019.07.03 at 14h 26m 28s.xml">
-      <configuration name="NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest_endangeredAnimal_instantiatesWithMaxAge - 2019.07.03 at 16h 04m 11s.xml">
+      <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesWithMaxAge" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest_all_returnsAllInstanceOfAnimal_TRUE - 2019.07.03 at 14h 35m 19s.xml">
-      <configuration name="NonEndangeredAnimalTest.all_returnsAllInstanceOfAnimal_TRUE" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest - 2019.07.03 at 16h 04m 24s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest - 2019.07.03 at 14h 37m 28s.xml">
-      <configuration name="NonEndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest - 2019.07.03 at 19h 59m 30s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="NonEndangeredAnimalTest - 2019.07.03 at 14h 49m 49s.xml">
-      <configuration name="NonEndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="EndangeredAnimalTest - 2019.07.03 at 19h 59m 44s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -440,7 +431,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.29813665" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.1863354" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -561,10 +552,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret lean-forward="true" />
+        <state relative-caret-position="377">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -573,18 +564,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="384">
+          <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3552#3553#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="183">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
