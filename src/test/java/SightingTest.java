@@ -31,6 +31,15 @@ public class SightingTest {
         assertEquals(1, newSighting.getAnimalId());
     }
 
+    @Test
+    public void save_insertObjectIntoDatabase() {
+        Sighting newSighting = setupNewSighting();
+        newSighting.save();
+        Sighting savedSighting = Sighting.all().get(0);
+        assertEquals(savedSighting, newSighting);
+    }
+
+
     public Sighting setupNewSighting(){
         return new Sighting("ZoneA", "Apiyo", 1);
     }
