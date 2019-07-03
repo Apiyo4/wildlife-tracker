@@ -1,9 +1,8 @@
 import java.util.Objects;
 import org.sql2o.*;
-import java.util.List;
 
 
-public class EndangeredAnimals extends Animal{
+public class EndangeredAnimal extends Animal{
     private int id;
     private String name;
     private String health;
@@ -11,7 +10,7 @@ public class EndangeredAnimals extends Animal{
     public static final String type = "Endangered";
 
 
-    public EndangeredAnimals(String name, String health, int age) {
+    public EndangeredAnimal(String name, String health, int age) {
         this.name= name;
         this.health = health;
         this.age = age;
@@ -20,9 +19,9 @@ public class EndangeredAnimals extends Animal{
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof EndangeredAnimals)) return false;
+        if (!(o instanceof EndangeredAnimal)) return false;
         if (!super.equals(o)) return false;
-        EndangeredAnimals that = (EndangeredAnimals) o;
+        EndangeredAnimal that = (EndangeredAnimal) o;
         return id == that.id &&
                 age == that.age &&
                 Objects.equals(name, that.name) &&
