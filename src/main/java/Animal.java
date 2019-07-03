@@ -6,6 +6,7 @@ import java.util.List;
 public class Animal implements DatabaseManagement{
     public String name;
     public int id;
+    public static final String type = "Not endangered";
 
     public Animal(String name) {
         this.name = name;
@@ -51,6 +52,9 @@ public class Animal implements DatabaseManagement{
                     .executeAndFetchFirst(Animal.class);
             return animal;
         }
+    }
+    public static String getType() {
+        return type;
     }
 
     public int getId() {

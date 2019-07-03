@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb8edff5-50c8-49d8-a0f1-49768cf89cca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="105">
+              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="260">
+              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,17 +93,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimals.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="330">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="480">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,19 +124,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sql2o/sql2o/1.5.4/be8814367c1f4b0965bbeb605a779f69bd6c3487/sql2o-1.5.4-sources.jar!/org/sql2o/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="103">
               <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="259">
+              <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1593#1594#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,15 +165,16 @@
         <option value="$PROJECT_DIR$/src/main/java/DB.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/DatabaseRule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AnimalTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseManagement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Animal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" />
         <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AnimalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Animal.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="684" />
     <option name="width" value="682" />
     <option name="height" value="767" />
   </component>
@@ -241,13 +258,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AnimalTest.find_returnsAnimalWithSameId_secondAnimal">
-    <configuration name="AnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EndangeredAnimalsTest.endangeredAnimalGetType">
+    <configuration name="AnimalTest.endangeredAnimalGetType" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AnimalTest.endangeredAnimalGetType&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -262,12 +279,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AnimalTest.all_returnsAllInstanceOfAnimal_TRUE" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.all_returnsAllInstanceOfAnimal_TRUE&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalsTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -282,12 +299,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AnimalTest.find_returnsAnimalWithSameId_secondAnimal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalsTest.endangeredAnimalGetAge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.find_returnsAnimalWithSameId_secondAnimal&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalsTest.endangeredAnimalGetAge&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -302,12 +319,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AnimalTest.save_assignsIdToObject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalsTest.endangeredAnimalGetHealth_String" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.save_assignsIdToObject&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalsTest.endangeredAnimalGetHealth_String&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -322,12 +339,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AnimalTest.save_insertsObjectsIntoDatabase_Animal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalsTest.endangeredAnimalGetType" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.save_insertsObjectsIntoDatabase_Animal&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalsTest.endangeredAnimalGetType&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -344,11 +361,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AnimalTest.find_returnsAnimalWithSameId_secondAnimal" />
-        <item itemvalue="Gradle.AnimalTest.save_assignsIdToObject" />
-        <item itemvalue="Gradle.AnimalTest.all_returnsAllInstanceOfAnimal_TRUE" />
-        <item itemvalue="Gradle.AnimalTest.save_insertsObjectsIntoDatabase_Animal" />
-        <item itemvalue="Gradle.AnimalTest" />
+        <item itemvalue="Gradle.EndangeredAnimalsTest.endangeredAnimalGetType" />
+        <item itemvalue="Gradle.AnimalTest.endangeredAnimalGetType" />
+        <item itemvalue="Gradle.EndangeredAnimalsTest.endangeredAnimalGetAge" />
+        <item itemvalue="Gradle.EndangeredAnimalsTest.endangeredAnimalGetHealth_String" />
+        <item itemvalue="Gradle.EndangeredAnimalsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -366,39 +383,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AnimalTest - 2019.07.01 at 08h 22m 51s.xml">
-      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest - 2019.07.01 at 08h 26m 28s.xml">
-      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest - 2019.07.01 at 09h 03m 43s.xml">
-      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest - 2019.07.02 at 13h 46m 36s.xml">
-      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest - 2019.07.02 at 13h 47m 22s.xml">
-      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest_save_insertsObjectsIntoDatabase_Animal - 2019.07.02 at 16h 12m 37s.xml">
-      <configuration name="AnimalTest.save_insertsObjectsIntoDatabase_Animal" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest_all_returnsAllInstanceOfAnimal_TRUE - 2019.07.02 at 16h 18m 51s.xml">
-      <configuration name="AnimalTest.all_returnsAllInstanceOfAnimal_TRUE" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnimalTest_save_assignsIdToObject - 2019.07.02 at 16h 26m 54s.xml">
-      <configuration name="AnimalTest.save_assignsIdToObject" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="AnimalTest_find_returnsAnimalWithSameId_secondAnimal - 2019.07.02 at 16h 35m 42s.xml">
       <configuration name="AnimalTest.find_returnsAnimalWithSameId_secondAnimal" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="AnimalTest_find_returnsAnimalWithSameId_secondAnimal - 2019.07.02 at 16h 36m 31s.xml">
       <configuration name="AnimalTest.find_returnsAnimalWithSameId_secondAnimal" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="AnimalTest_find_returnsAnimalWithSameId_secondAnimal - 2019.07.03 at 07h 15m 43s.xml">
+      <configuration name="AnimalTest.find_returnsAnimalWithSameId_secondAnimal" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalsTest_endangeredAnimalInstantiatesCorrectly - 2019.07.03 at 07h 22m 56s.xml">
+      <configuration name="EndangeredAnimalsTest.endangeredAnimalInstantiatesCorrectly" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalsTest_endangeredPersonGetHealth_String - 2019.07.03 at 07h 26m 02s.xml">
+      <configuration name="EndangeredAnimalsTest.endangeredPersonGetHealth_String" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalsTest - 2019.07.03 at 07h 26m 09s.xml">
+      <configuration name="EndangeredAnimalsTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalsTest_endangeredAnimalGetHealth_String - 2019.07.03 at 07h 29m 10s.xml">
+      <configuration name="EndangeredAnimalsTest.endangeredAnimalGetHealth_String" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalsTest_endangeredAnimalGetAge - 2019.07.03 at 07h 29m 15s.xml">
+      <configuration name="EndangeredAnimalsTest.endangeredAnimalGetAge" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalsTest_endangeredAnimalGetAge - 2019.07.03 at 07h 29m 31s.xml">
+      <configuration name="EndangeredAnimalsTest.endangeredAnimalGetAge" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnimalTest_endangeredAnimalGetType - 2019.07.03 at 07h 35m 10s.xml">
+      <configuration name="AnimalTest.endangeredAnimalGetType" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="0" width="682" height="767" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -408,13 +425,13 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" weight="0.25" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.20962733" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.20995334" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.26242235" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.26127526" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -478,10 +495,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sql2o/sql2o/1.5.4/be8814367c1f4b0965bbeb605a779f69bd6c3487/sql2o-1.5.4-sources.jar!/org/sql2o/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -499,47 +519,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sql2o/sql2o/1.5.4/be8814367c1f4b0965bbeb605a779f69bd6c3487/sql2o-1.5.4-sources.jar!/org/sql2o/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="103">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseRule.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="480">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="260">
+          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimals.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="259">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
