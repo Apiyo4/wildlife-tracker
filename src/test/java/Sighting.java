@@ -9,4 +9,16 @@ public class Sighting {
         Ranger = ranger;
         this.animalId = animalId;
     }
+
+    public String getLocation() {
+        return Location;
+    }
+
+    public String getRanger() {
+        return Ranger;
+    }
+
+    public int getAnimalId() {
+        return animalId;
+    }
 }
