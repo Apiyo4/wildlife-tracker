@@ -5,20 +5,15 @@ import java.util.List;
 public class Location implements DatabaseManagement {
     private int id;
     private String name;
-    private int sightingId;
 
-    public Location(String name, int sightingId) {
+    public Location(String name) {
         this.name = name;
-        this.sightingId = sightingId;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getSightingId() {
-        return sightingId;
-    }
 
     public int getId() {
         return id;
@@ -29,21 +24,19 @@ public class Location implements DatabaseManagement {
         if (this == o) return true;
         if (!(o instanceof Location)) return false;
         Location location = (Location) o;
-        return sightingId == location.sightingId &&
-                Objects.equals(name, location.name);
+        return Objects.equals(name, location.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, sightingId);
+        return Objects.hash(name);
     }
 
     public void save(){
         try(Connection con =  DB.sql2o.open()){
-            String sql = "INSERT INTO locations (name, sightingid) VALUES (:name, :sightingId)";
+            String sql = "INSERT INTO locations (name) VALUES (:name)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .addParameter("sightingId", this.sightingId)
                     .executeUpdate()
                     .getKey();
         }

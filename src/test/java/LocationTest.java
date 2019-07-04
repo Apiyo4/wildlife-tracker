@@ -27,11 +27,6 @@ public class LocationTest {
     }
 
     @Test
-    public void location_getSightingId() {
-        Location newLocation = setupNewLocation();
-        assertEquals(1, newLocation.getSightingId());
-    }
-    @Test
     public void save_assignsIdToObject() {
         Location newLocation = setupNewLocation();
         newLocation.save();
@@ -51,7 +46,7 @@ public class LocationTest {
     public void all_returnsAllInstanceOfLocation_TRUE() {
         Location firstLocation = setupNewLocation();
         firstLocation.save();
-        Location secondLocation = new Location("ZoneB", 2);
+        Location secondLocation = new Location("ZoneB");
         secondLocation.save();
         assertEquals(true, Location.all().get(0).equals(firstLocation));
         assertEquals(true, Location.all().get(1).equals(secondLocation));
@@ -63,13 +58,13 @@ public class LocationTest {
     public void find_returnsLocationWithSameId_secondLocation() {
         Location firstLocation = setupNewLocation();
         firstLocation.save();
-        Location secondLocation = new Location("ZoneB", 2);
+        Location secondLocation = new Location("ZoneB");
         secondLocation.save();
         assertEquals(Location.find(secondLocation.getId()), secondLocation);
     }
 
     public Location setupNewLocation(){
-        return new Location("ZoneA", 1);
+        return new Location("ZoneA");
     }
 
 }
