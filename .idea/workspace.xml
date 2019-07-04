@@ -254,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RangerTest">
+  <component name="RunManager" selected="Gradle.RangerTest.find_returnsRangerWithSameId">
     <configuration name="RangerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -295,12 +295,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RangerTest.rangerGetSightingId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RangerTest.find_returnsRangerWithSameId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RangerTest.rangerGetSightingId&quot;" />
+        <option name="scriptParameters" value="--tests &quot;RangerTest.find_returnsRangerWithSameId&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -357,11 +357,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RangerTest.find_returnsRangerWithSameId" />
         <item itemvalue="Gradle.RangerTest" />
         <item itemvalue="Gradle.RangerTest.save_insertObjectsIntoDatabase" />
         <item itemvalue="Gradle.RangerTest.all_returnAllInstancesOfRanger" />
         <item itemvalue="Gradle.RangerTest.ranger_returnsTrueIfNameBadgeNumberSightingIdAreSame" />
-        <item itemvalue="Gradle.RangerTest.rangerGetSightingId" />
       </list>
     </recent_temporary>
   </component>
