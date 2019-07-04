@@ -28,11 +28,6 @@ public class RangerTest {
         assertEquals(2, newRanger.getBadgeNumber());
     }
 
-    @Test
-    public void rangerGetSightingId() {
-        Ranger newRanger = setupNewRanger();
-        assertEquals(1, newRanger.getSightingId());
-    }
 
     @Test
     public void ranger_returnsTrueIfNameBadgeNumberSightingIdAreSame() {
@@ -70,10 +65,10 @@ public class RangerTest {
     }
 
     public Ranger setupNewRanger(){
-        return new Ranger("Apiyo", 2, 1);
+        return new Ranger("Apiyo", 2);
     }
     public Ranger setupNewRanger1(){
-        return new Ranger("Adongo", 1, 2);
+        return new Ranger("Adongo", 1);
     }
     public Sighting setupNewSighting(){
         return new Sighting("ZoneA", "Apiyo", 1);

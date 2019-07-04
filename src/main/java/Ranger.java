@@ -6,12 +6,10 @@ public class Ranger implements DatabaseManagement {
     private int id;
     private String name;
     private int badgeNumber;
-    private int sightingId;
 
-    public Ranger(String name, int badgeNumber, int sightingId) {
+    public Ranger(String name, int badgeNumber) {
         this.name = name;
         this.badgeNumber = badgeNumber;
-        this.sightingId = sightingId;
     }
 
     public String getName() {
@@ -22,9 +20,6 @@ public class Ranger implements DatabaseManagement {
         return badgeNumber;
     }
 
-    public int getSightingId() {
-        return sightingId;
-    }
     public int getId(){ return id;}
 
     @Override
@@ -33,22 +28,20 @@ public class Ranger implements DatabaseManagement {
         if (!(o instanceof Ranger)) return false;
         Ranger ranger = (Ranger) o;
         return badgeNumber == ranger.badgeNumber &&
-                sightingId == ranger.sightingId &&
                 Objects.equals(name, ranger.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, badgeNumber, sightingId);
+        return Objects.hash(name, badgeNumber);
     }
 
     public void save(){
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO rangers (name, badgenumber, sightingid) VALUES (:name, :badgeNumber, :sightingId)";
+            String sql = "INSERT INTO rangers (name, badgenumber) VALUES (:name, :badgeNumber)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
                     .addParameter("badgeNumber", this.badgeNumber)
-                    .addParameter("sightingId", this.sightingId)
                     .executeUpdate()
                     .getKey();
         }
