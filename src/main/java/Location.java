@@ -2,7 +2,7 @@ import java.util.Objects;
 import org.sql2o.*;
 import java.util.List;
 
-public class Location {
+public class Location implements DatabaseManagement {
     private int id;
     private String name;
     private int sightingId;
