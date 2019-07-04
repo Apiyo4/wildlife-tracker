@@ -1,6 +1,8 @@
 import org.junit.Rule;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class RangerTest {
@@ -73,4 +75,9 @@ public class RangerTest {
     public Ranger setupNewRanger1(){
         return new Ranger("Adongo", 1, 2);
     }
+    public Sighting setupNewSighting(){
+        return new Sighting("ZoneA", "Apiyo", 1);
+    }
+
+
 }

@@ -66,18 +66,6 @@ public class SightingTest {
         assertEquals(Sighting.find(secondSighting.getId()), secondSighting);
     }
 
-    @Test
-    public void getAnimal_retrievesAllAnimalsFromDatabase_animalList() {
-        Sighting newSighting = setupNewSighting();
-        newSighting.save();
-        EndangeredAnimal newEndangeredAnimal = setupNewEndangeredAnimal();
-        newEndangeredAnimal.save();
-        NonEndangeredAnimal newNonEndangeredAnimal = setupNewNonEndangeredAnimal();
-        newNonEndangeredAnimal.save();
-        Object[] animals = new Object[] {newEndangeredAnimal, newNonEndangeredAnimal};
-        assert(newSighting.getAnimals().containsAll(Arrays.asList(animals)));
-
-    }
 
     public Sighting setupNewSighting(){
         return new Sighting("ZoneA", "Apiyo", 1);
