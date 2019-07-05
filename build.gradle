@@ -19,3 +19,5 @@ dependencies {
     compile group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
     compile 'org.sql2o:sql2o:1.5.4'
 }
+defaultTasks= ['clean']
+task stage(dependsOn:['clean', 'installDist'])
