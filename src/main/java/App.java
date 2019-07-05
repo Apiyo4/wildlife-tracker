@@ -84,6 +84,11 @@ public class App {
             model.put("ranger", Ranger.all());
             return new ModelAndView(model, "dashboard.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/rangers", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "ranger.hbs");
+        },new HandlebarsTemplateEngine());
     }
 
 }

@@ -1,0 +1,28 @@
+body{
+  background-image: url("https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+  font-size: 18px;
+
+}
+ul{
+ float: right;
+}
+ul > li{
+  display: inline;
+  margin-right: 20px;
+}
+ul > li > a{
+  font-size: 20px;
+  font-family: "Avenir", "Lucida", fantasy;
+  text-decoration: none;
+  color:inherit;
+}
+ul > li > a:hover{
+  background-color: #33ccff;
+  text-decoration: underline;
+}
+.marginTop{
+  margin-top: 20%;
+}

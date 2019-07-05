@@ -1,14 +1,31 @@
-{{#partial "styles"}}
-    <link rel='stylesheet' href='css/App.css'>
-{{/partial}}
 {{#partial "content"}}
-    <div class=" marginTop">
-        <h1>Success!</h1>
-
-        Thank you, your content has been saved.
-
-        <a href="/">Go Back</a>
-    </div>
+    <h1>All Sightings</h1>
+    <br>
+    <br>
+    <table class="table">
+        <th>
+            <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Ranger's Name</th>
+                <th scope="col">Badge Number</th>
+                <th scope="col">Animal Name</th>
+                <th scope="col">Animal Type</th>
+                <th scope="col">Animal Health</th>
+                <th scope="col">Animal Age</th>
+                <th scope="col">Time of sighting</th>
+            </tr>
+            {{#each sightings}}
+                <tr>
+                    <td>{{location}}</td>
+                    <td>{{rangerName}}</td>
+                    <td>{{badgeNumber}}</td>
+                    <td>{{animalName}}</td>
+                    <td>{{animalType}}</td>
+                    <td>{{animalHealth}}</td>
+                    <td>{{animalAge}}</td>
+                    <td>{{timestamp}}</td>
+                </tr>
+            {{/each}}
+    </table>
 {{/partial}}
-
-{{> layout.hbs}}
+{{>layout.hbs}}
