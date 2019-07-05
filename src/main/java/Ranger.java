@@ -47,6 +47,7 @@ public class Ranger implements DatabaseManagement {
         }
 
     }
+
     public static List<Ranger> all(){
         String sql = "SELECT * FROM rangers;";
         try(Connection con = DB.sql2o.open()){

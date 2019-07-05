@@ -2,12 +2,14 @@
     <link rel='stylesheet' href='css/App.css'>
 {{/partial}}
 {{#partial "content"}}
-    <div class=" marginTop">
-        <h1>Success!</h1>
-
-        Thank you, your content has been saved.
-
-        <a href="/">Go Back</a>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="text.center">Location</h1>
+            {{#each locations }}
+                <h3>Location name: {{ name }}</h3>
+            {{/each}}
+        </div>
+    </div><a href="/">Go Back</a>
     </div>
 {{/partial}}
 

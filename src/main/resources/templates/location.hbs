@@ -1,0 +1,28 @@
+
+{{#partial "content"}}
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="text.center">Location</h1>
+            {{#each locations }}
+                <h3>Location name: {{ name }}</h3>
+            {{/each}}
+        </div>
+    </div>
+    <h1><a href="/">Go Back</a></h1>
+
+
+    <form action="/locations/new" method="post">
+    <div class="form-group">
+        <label for="location"> Location </label>
+        <select name="location" id="location" class="form-control" required>
+            <option value="ZoneA">ZoneA</option>
+            <option value="ZoneB">ZoneB</option>
+        </select>
+        <button type="submit" class="button btn-success">Submit</button>
+    </div>
+    </form>
+
+
+{{/partial}}
+{{> layout.hbs}}

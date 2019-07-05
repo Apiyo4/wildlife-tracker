@@ -4,33 +4,33 @@
         <form action="/dashboards" method="post">
             <div class="form-group">
                 <label for="location"> Location </label>
-                <select name="location" id="location" class="form-control">
+                <select name="location" id="location" class="form-control" required>
                     <option value="ZoneA">ZoneA</option>
                     <option value="ZoneB">ZoneB</option>
                 </select>
             </div>
             <div class= "form-group">
                 <label for="rangerName">Ranger's Name</label>
-                <input type="text" id="rangerName" name="rangerName" class="form-control">
+                <input type="text" id="rangerName" name="rangerName" class="form-control" required>
             </div>
             <div class= "form-group">
                 <label for="badgeNumber">Badge Number</label>
-                <input type="text" id="badgeNumber" name="badgeNumber" class="form-control">
+                <input type="text" id="badgeNumber" name="badgeNumber" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="animalName">Animal Name</label>
-                <input type="text" id="animalName" name="animalName" class="form-control">
+                <input type="text" id="animalName" name="animalName" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="type">Animal's Type</label>
-                <select name="type" id="type" class="form-control">
+                <select name="type" id="type" class="form-control" required>
                     <option value="Endangered">Endangered</option>
                     <option value="NonEndangered">Non-Endangered</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="animalHealth">Animal's Health</label>
-                <select name="animalHealth" id="animalHealth" class="form-control">
+                <select name="animalHealth" id="animalHealth" class="form-control" required>
                     <option value="weak">Weak</option>
                     <option value="okay">Okay</option>
                     <option value="healthy">Healthy</option>
@@ -38,7 +38,7 @@
             </div>
             <div class="form-group">
                 <label for=""animalAge>Animal's Age</label>
-                <select name="animalAge" id="animalAge" class="form-control">
+                <select name="animalAge" id="animalAge" class="form-control" required>
                     <option value="newborn">Newborn</option>
                     <option value="young">Young</option>
                     <option value="adult">Adult</option>
