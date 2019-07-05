@@ -30,4 +30,6 @@ public class NonEndangeredAnimal extends Animal {
             return nonEndangeredAnimal;
         }
     }
+
+
 }

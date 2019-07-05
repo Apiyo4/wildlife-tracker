@@ -1,0 +1,49 @@
+{{#partial "content"}}
+    <div class=" marginTop">
+        <table class="table table-dark">
+            <thead class="thead-dark">
+            <h1>Sightings</h1>
+            <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Ranger Name</th>
+                <th scope="col">Animal Id</th>
+                <th scope="col">Seen at</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {{#each sightings}}
+                <tr>
+                    <td>{{location}}</td>
+                    <td>{{ranger}}</td>
+                    <td>{{animalId}}</td>
+                    <td>{{sightedTime}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div>
+    <form action="/sightings" method="post">
+        <div class="form-group">
+            <label for="location"> Location </label>
+            <select name="location" id="location" class="form-control" required>
+                <option value="ZoneA">ZoneA</option>
+                <option value="ZoneB">ZoneB</option>
+            </select>
+
+        </div>
+        <div class= "form-group">
+            <label for="ranger">Ranger's Name</label>
+            <input type="text" id="ranger" name="ranger" class="form-control" required>
+        </div>
+        <div class= "form-group">
+            <label for="animalId">Animal Id</label>
+            <input type="text" id="animalId" name="animalId" class="form-control" required>
+        </div>
+        <button type="submit" class="button btn-success">Submit</button>
+    </form>
+</div>
+{{/partial}}
+
+{{> layout.hbs}}

@@ -8,6 +8,7 @@ public abstract class Animal implements DatabaseManagement{
     public int id;
     public String type;
     public String health;
+    public String age;
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -26,18 +27,21 @@ public abstract class Animal implements DatabaseManagement{
         return name;
     }
 
-    public void save(){
-        try(Connection con =  DB.sql2o.open()){
-            String sql = "INSERT INTO animals (name, type) VALUES (:name, :type)";
-            this.id = (int) con.createQuery(sql, true)
-                    .addParameter("name", this.name)
-                    .addParameter("type", this.type)
-                    .executeUpdate()
-                    .getKey();
-        }
-    }
+
 
     public int getId() {
         return id;
+    }
+    public void save(){
+        try(Connection con =  DB.sql2o.open()){
+            String sql = "INSERT INTO animals (name, type, health, age) VALUES (:name, :type, :health, :age)";
+            this.id = (int) con.createQuery(sql, true)
+                    .addParameter("name", this.name)
+                    .addParameter("type", this.type)
+                    .addParameter("health", this.health)
+                    .addParameter("age", this.age)
+                    .executeUpdate()
+                    .getKey();
+        }
     }
 }

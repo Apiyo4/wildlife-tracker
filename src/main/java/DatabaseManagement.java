@@ -1,6 +1,6 @@
 import java.util.List;
 
 public interface DatabaseManagement{
-    void save();
+//    void save();
     boolean equals(Object o);
 }
